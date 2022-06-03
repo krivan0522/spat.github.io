@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN - NSSC</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <img class="background" src="Beautiful Space Star Cluster Galaxy Blue Violet Gas Pattern Wallpaper.jpg"
+        alt="Galaxy">
+    <nav class="Navbar">
+        <div class="left">
+            <a href="index.html"><img src="logo192.png" alt="NSSC Logo"></a>
+        </div>
+        <div class="mid">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#Gallery">Gallery</a></li>
+                <li><a href="#Team">Team</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <li><a href="formsup.html" target=>Signup</a></li>
+        </div>
+    </nav>
+    <form>
+        <div class="Login">
+            <fieldset>
+                <legend>Log In</legend>
+                <label for="email">Email Address : </label><br>
+                <input type="email" id="email" name="email" placeholder="abcxyz@gmail.com" required><br>
+                <p>We will never show your email address/password with anyone</p><br>
+                <label for="password">Password : </label><br>
+                <input type="password" name="password" id="password" placeholder="***********" required><br>
+                <input type="checkbox" onclick="myFunction()" class="show" id="passwordshow">
+                <label for="passwordshow">Show Password</label>
+                <script>
+                    function myFunction() {
+                      var x = document.getElementById("password");
+                      if (x.type === "password") {
+                        x.type = "text";
+                      } else {
+                        x.type = "password";
+                      }
+                    }
+                    </script>
+            </fieldset><br>
+            <button type="submit" class="log" >Log in</button>
+            <button type="button" class="forgot">Forgot password ?</button>
+            
+            </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGN UP - NSSC</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+
+<body>
+    <img class="background" src="Beautiful Space Star Cluster Galaxy Blue Violet Gas Pattern Wallpaper.jpg"
+        alt="Galaxy">
+    <nav class="Navbar">
+        <div class="left">
+            <a href="index.html"><img src="logo192.png" alt="NSSC Logo"></a>
+        </div>
+        <div class="mid">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#Gallery">Gallery</a></li>
+                <li><a href="#Team">Team</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <li><a href="forms.html">Login</a></li>
+        </div>
+    </nav>
+    <form>
+        <div class="Signup">
+            <fieldset>
+                <legend>Sign up</legend>
+                <div class="sign">
+                    <div class="nameform">
+                    <label for="name">First Name : </label><br>
+                    <input type="text" id="name" name="name" placeholder="First Name" required><br>
+                    
+                    <label for="email">Email : </label><br>
+                    <input type="email" name="email" id="email" placeholder="abc@xyz.com" required><br>
+                    
+                    
+                </div>
+                <div class="surname">
+                    <label for="lastname">Last name : </label><br>
+                    <input type="text" id="surname" name="surname" placeholder="Last Name" required><br>
+                    <label for="pass">Password : </label><br>
+                    <input type="password" id="pwd" name="pwd" required><br>
+                </div>
+            </div>
+            <br>
+            <div class="show">
+            <p>We will never show your email address/password with anyone</p><br>
+                <label for="password">Confirm Password : </label><br>
+                <input type="password" name="password" id="password" placeholder="***********" required><br>
+                <input type="checkbox" onclick="myFunction()" class="show" id="passwordshow">
+                <label for="passwordshow">Show Password</label>
+                <script>
+                    function myFunction() {
+                      var x = document.getElementById("password");
+                      if (x.type === "password") {
+                        x.type = "text";
+                      } else {
+                        x.type = "password";
+                      }
+                    }
+                    </script>
+                </div>
+            </fieldset> 
+        </div>
+    </form>
+</body>
+</html>
